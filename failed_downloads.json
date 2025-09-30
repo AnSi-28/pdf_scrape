@@ -1,830 +1,247 @@
 [
   {
-    "idx": 4,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5587110/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
     "idx": 12,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3177255/",
     "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "TNO1 is involved in salt tolerance and vacuolar trafficking in Arabidopsis."
   },
   {
     "idx": 17,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2915878/",
     "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "The Drosophila SUN protein Spag4 cooperates with the coiled-coil protein Yuri Gagarin to maintain association of the basal body and spermatid nucleus."
   },
   {
     "idx": 35,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4826010/",
     "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "HLB1 Is a Tetratricopeptide Repeat Domain-Containing Protein That Operates at the Intersection of the Exocytic and Endocytic Pathways at the TGN/EE in Arabidopsis"
   },
   {
     "idx": 36,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6048781/",
     "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "ERULUS is a plasma membrane-localized receptor-like kinase that specifies root hair growth by maintaining tip-focused cytoplasmic calcium oscillations."
   },
   {
     "idx": 42,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3005423/",
     "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "Manipulating the permeation of charged compounds through the MscL nanovalve."
   },
   {
     "idx": 54,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3774184/",
     "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 41,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2998437/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 57,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6915713/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 62,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5899691/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 63,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6204554/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 64,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4064004/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 58,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6124165/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 60,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11063234/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 61,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5672023/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 70,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4453782/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 71,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4902601/",
-    "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "Partial weight suspension: A novel murine model for investigating adaptation to reduced musculoskeletal loading."
   },
   {
     "idx": 68,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4378170/",
     "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "Galactose-depleted xycoglucan is dysfunctional and leads to dwarfism in Arabidopsis"
+  },
+  {
+    "idx": 70,
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4453782/",
+    "status": "failed",
+    "reason": "no valid pdf",
+    "title": "Vesicles versus Tubes: Is Endoplasmic Reticulum-Golgi Transport in Plants Fundamentally Different from Other Eukaryotes?"
+  },
+  {
+    "idx": 71,
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4902601/",
+    "status": "failed",
+    "reason": "no valid pdf",
+    "title": "Pectin methylesterification impacts the relationship between photosynthesis and plant growth."
   },
   {
     "idx": 91,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3868799/",
     "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 84,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9832585/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 83,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6062551/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 104,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7778922/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 100,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7954810/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 105,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7870178/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 106,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7733874/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 107,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7828077/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 108,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8044432/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 93,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5736159/",
-    "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "Bone marrow leptin signaling mediates obesity-associated adipose tissue inflammation in male mice."
   },
   {
     "idx": 119,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3615599/",
     "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "Differential effects of aging and exercise on intra-abdominal adipose arteriolar function and blood flow regulation."
   },
   {
     "idx": 120,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4050424/",
     "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 122,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4169763/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 124,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4379453/",
-    "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "Effects of spaceflight and ground recovery on mesenteric artery and vein constrictor properties in mice."
   },
   {
     "idx": 127,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5866446/",
     "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 126,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4964660/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 128,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6165321/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 129,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7339929/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 130,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8220224/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 131,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2910419/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 134,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7324008/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 153,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6379395/",
-    "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "Effects of age and exercise training on coronary microvascular smooth muscle phenotype and function"
   },
   {
     "idx": 174,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4936552/",
     "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "A ROS-assisted calcium wave dependent on AtRBOHD and TPC1 propagates the systemic response to salt stress in Arabidopsis roots"
   },
   {
     "idx": 175,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7610290/",
     "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 166,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10233975/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 180,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7414185/",
-    "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "ROS, calcium and electric signals: Key mediators of rapid systemic signaling in plants"
   },
   {
     "idx": 181,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8133610/",
     "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "The fast and the furious: Rapid long-range signaling in plants."
   },
   {
     "idx": 183,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9706465/",
     "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 189,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5666834/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 194,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4647464/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 190,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6753329/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 193,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8260663/",
-    "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "The vacuolar H+/Ca transporter CAX1 participates in submergence and anoxia stress responses."
   },
   {
     "idx": 192,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4405755/",
     "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 210,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11492218/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 209,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9146534/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 211,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6339989/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 207,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12040010/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 213,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3947616/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 214,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5477841/",
-    "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "Skeletal tissue regulation by catalase over-expression in mitochondria"
   },
   {
     "idx": 227,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5047659/",
     "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 216,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5515531/",
-    "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "Plastid osmotic stress influences cell differentiation at the plant shoot apex."
   },
   {
     "idx": 228,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5454470/",
     "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "Spaceflight-induced synaptic modifications within hair cells of the mammalian utricle."
   },
   {
     "idx": 232,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6188462/",
     "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 238,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6137544/",
-    "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "To Infinity and Beyond! Human spaceflight and life science."
   },
   {
     "idx": 237,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4653058/",
     "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "Spaceflight alters expression of microRNA during T-cell activation"
+  },
+  {
+    "idx": 238,
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6137544/",
+    "status": "failed",
+    "reason": "no valid pdf",
+    "title": "Spaceflight impairs antigen-specific tolerance induction in vivo and increases inflammatory cytokines."
   },
   {
     "idx": 248,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4631774/",
     "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "Focal enhancement of the skeleton to exercise correlates to mesenchymal stem cell responsivity rather than peak external forces."
   },
   {
     "idx": 247,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4337661/",
     "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 255,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3092937/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 257,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9287483/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 258,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5748516/",
-    "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "Bone shaft bending strength index is unaffected by exercise and unloading in mice"
   },
   {
     "idx": 267,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3962621/",
     "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 263,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6908503/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 262,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6889863/",
-    "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "EUK-134 ameliorates nNOS\u00ac\u00b5 translocation and skeletal muscle fiber atrophy during short-term mechanical unloading."
   },
   {
     "idx": 277,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5933128/",
     "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "Reduced Arogenate Dehydratase Expression: Ramifications for Photosynthesis and Metabolism"
   },
   {
     "idx": 283,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4152162/",
     "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 290,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9547011/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 299,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11167063/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 300,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11166909/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 302,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11166948/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 303,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11166952/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 329,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10414970/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 327,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6213004/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 330,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8450295/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 333,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10504369/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 335,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4682325/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 332,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8932657/",
-    "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "The Effect of spaceflight on mouse olfactory bulb volume, neurogenesis, and cell death indicates the protective effect of novel environment."
   },
   {
     "idx": 334,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3982735/",
     "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "Ethylene-induced flavonol accumulation in guard cells suppresses reactive oxygen species and modulates stomatal aperture"
   },
   {
-    "idx": 343,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3911009/",
+    "idx": 335,
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4682325/",
     "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 346,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5648920/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 347,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5817088/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 348,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7825584/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 349,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8904044/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 345,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11673879/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 350,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3012082/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 351,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11088941/",
-    "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "Transcriptional and Hormonal Regulation of Gravitropism of Woody Stems in Populus."
   },
   {
     "idx": 392,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3792163/",
     "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 407,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11324864/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 408,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3665236/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 409,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10470837/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 411,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8896891/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 410,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10386755/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 412,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8430797/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 413,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5460135/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 414,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10774393/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 420,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5600826/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 421,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10831389/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 415,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6126739/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 416,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4411111/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 419,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3509447/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 423,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4507784/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 417,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6126739/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 422,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10831389/",
-    "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "Changes in Mouse Thymus and Spleen after Return from the STS-135 Mission in Space"
   },
   {
     "idx": 426,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6130020/",
     "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "ANN1 and ANN2 Function in Post-Phloem Sugar Transport in Root Tips to Affect Primary Root Growth"
   },
   {
-    "idx": 462,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7138367/",
+    "idx": 454,
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8886715/",
     "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "Blocking SARS-CoV-2 Delta variant (B.1.617.2) spike protein receptor-binding domain binding with the ACE2 receptor of the host cell and inhibiting virus infections using human host defense peptide-conjugated graphene quantum dots."
   },
   {
-    "idx": 471,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8671758/",
+    "idx": 463,
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6689164/",
     "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 472,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5771473/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 473,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5288125/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 475,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9784906/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 477,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6597714/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 478,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6865368/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 479,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7907224/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 495,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7890410/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 497,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9862956/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 493,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9549344/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 494,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7530743/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 496,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9640571/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 498,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10410709/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 499,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10751425/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 492,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7285199/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 521,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5958250/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 533,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7393961/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 534,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7484075/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 535,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7516158/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 538,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7677455/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 537,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7595942/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 539,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8005752/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 536,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7561690/",
-    "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 547,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8875396/",
-    "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "Reproducible changes in the gut microbiome suggest a shift in microbial and host metabolism during spaceflight."
   },
   {
     "idx": 588,
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11969330/",
     "status": "failed",
-    "reason": "no valid pdf"
-  },
-  {
-    "idx": 568,
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6275019/",
-    "status": "failed",
-    "reason": "no valid pdf"
+    "reason": "no valid pdf",
+    "title": "In situ monitoring of barrier function on-chip via automated, non-invasive luminescence sensing."
   }
 ]

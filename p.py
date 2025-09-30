@@ -9,6 +9,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import random
 from threading import Lock
 from tqdm import tqdm
+from bs4 import BeautifulSoup
 
 # ================================
 # Utility functions
@@ -43,9 +44,54 @@ class ProgressCounter:
                 "skipped": self.skipped
             }
 
+def sanitize_filename(title):
+    """Convert title to safe filename"""
+    # Remove or replace invalid characters
+    title = re.sub(r'[<>:"/\\|?*]', '', title)
+    # Replace multiple spaces with single space
+    title = re.sub(r'\s+', ' ', title)
+    # Trim and limit length
+    title = title.strip()[:200]  # Max 200 chars
+    return title if title else "untitled"
+
 def extract_pmc_id(url):
     match = re.search(r'/PMC(\d+)', url)
     return match.group(1) if match else None
+
+def extract_title_from_page(html_content, landing_url):
+    """Extract article title from landing page HTML"""
+    try:
+        soup = BeautifulSoup(html_content, 'html.parser')
+        
+        # Try multiple title selectors (PMC uses different formats)
+        title_selectors = [
+            ('h1', {'class': 'content-title'}),
+            ('h1', {'class': 'article-title'}),
+            ('meta', {'name': 'citation_title'}),
+            ('meta', {'property': 'og:title'}),
+            ('meta', {'name': 'DC.Title'}),
+            ('h1', {}),
+            ('title', {})
+        ]
+        
+        for tag, attrs in title_selectors:
+            if tag == 'meta':
+                element = soup.find(tag, attrs)
+                if element and element.get('content'):
+                    return element.get('content').strip()
+            else:
+                element = soup.find(tag, attrs)
+                if element:
+                    title = element.get_text().strip()
+                    # Clean up common suffixes
+                    title = re.sub(r'\s*-\s*PMC$', '', title)
+                    title = re.sub(r'\s*-\s*PubMed Central.*$', '', title, flags=re.IGNORECASE)
+                    if title and len(title) > 10:  # Ensure it's not too short
+                        return title
+        
+        return None
+    except Exception:
+        return None
 
 def safe_request(url, headers, retries=3):
     """Request with retry + exponential backoff"""
@@ -59,8 +105,8 @@ def safe_request(url, headers, retries=3):
                 time.sleep(wait)
     return None
 
-def get_pdf_url_from_landing_page(landing_url):
-    """Scrape landing page for PDF links or fallback to known PMC patterns"""
+def get_pdf_url_and_title_from_landing_page(landing_url):
+    """Scrape landing page for PDF links and title"""
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                       "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -69,15 +115,20 @@ def get_pdf_url_from_landing_page(landing_url):
     try:
         response = safe_request(landing_url, headers)
         if not response or response.status_code != 200:
-            return None
+            return None, None
         html_content = response.text
 
+        # Extract title first
+        title = extract_title_from_page(html_content, landing_url)
+
+        # Extract PDF URL
         pdf_patterns = [
             r'href="(/pmc/articles/[^"]*\.pdf)"',
             r'href="(https://[^"]*\.pdf)"',
             r'href="([^"]*\.pdf)"'
         ]
 
+        pdf_link = None
         for pattern in pdf_patterns:
             pdf_matches = re.findall(pattern, html_content, re.IGNORECASE)
             if pdf_matches:
@@ -86,16 +137,17 @@ def get_pdf_url_from_landing_page(landing_url):
                     pdf_link = 'https://pmc.ncbi.nlm.nih.gov' + pdf_link
                 elif not pdf_link.startswith('http'):
                     pdf_link = landing_url.rstrip('/') + '/' + pdf_link
-                return pdf_link
+                break
 
-        # fallback
-        pmc_id = extract_pmc_id(landing_url)
-        if pmc_id:
-            return f"https://pmc.ncbi.nlm.nih.gov/articles/PMC{pmc_id}/pdf/"
+        # Fallback for PDF URL
+        if not pdf_link:
+            pmc_id = extract_pmc_id(landing_url)
+            if pmc_id:
+                pdf_link = f"https://pmc.ncbi.nlm.nih.gov/articles/PMC{pmc_id}/pdf/"
 
-        return None
+        return pdf_link, title
     except Exception:
-        return None
+        return None, None
 
 def try_alternative_pdf_download(landing_url, filename, download_folder):
     """Try known PMC PDF endpoints"""
@@ -152,7 +204,7 @@ def download_pdf(pdf_url, filename, download_folder):
             os.remove(filepath)
         return False
 
-def process_row(idx, row, url_column, download_folder, progress, pbar):
+def process_row(idx, row, url_column, title_column, download_folder, progress, pbar):
     """Handle one paper (thread-safe)"""
     try:
         landing_url = row[url_column]
@@ -162,8 +214,27 @@ def process_row(idx, row, url_column, download_folder, progress, pbar):
             pbar.update(1)
             return {"idx": idx, "url": None, "status": "skipped", "reason": "no url"}
 
+        # Try to get title from CSV first
+        title = None
+        if title_column and title_column in row.index and pd.notna(row[title_column]):
+            title = str(row[title_column]).strip()
+        
+        # Get PMC ID for fallback
         pmc_id = extract_pmc_id(str(landing_url))
-        filename = f"PMC{pmc_id}.pdf" if pmc_id else f"paper_{idx}.pdf"
+        
+        # Scrape page for PDF URL and title (if not in CSV)
+        pdf_url, scraped_title = get_pdf_url_and_title_from_landing_page(landing_url)
+        
+        # Use scraped title if CSV title is not available
+        if not title and scraped_title:
+            title = scraped_title
+        
+        # Create filename
+        if title:
+            filename = sanitize_filename(title) + ".pdf"
+        else:
+            filename = f"PMC{pmc_id}.pdf" if pmc_id else f"paper_{idx}.pdf"
+        
         filepath = os.path.join(download_folder, filename)
 
         # Check if already exists
@@ -171,10 +242,9 @@ def process_row(idx, row, url_column, download_folder, progress, pbar):
             progress.increment("exists")
             pbar.set_postfix({"✓": progress.success, "⊙": progress.exists, "✗": progress.failed}, refresh=False)
             pbar.update(1)
-            return {"idx": idx, "url": landing_url, "status": "exists", "filename": filename}
+            return {"idx": idx, "url": landing_url, "status": "exists", "filename": filename, "title": title}
 
-        # Try landing page scraping first
-        pdf_url = get_pdf_url_from_landing_page(landing_url)
+        # Try downloading with scraped PDF URL
         downloaded = download_pdf(pdf_url, filename, download_folder) if pdf_url else False
 
         # Try alternatives if failed
@@ -185,12 +255,12 @@ def process_row(idx, row, url_column, download_folder, progress, pbar):
             progress.increment("success")
             pbar.set_postfix({"✓": progress.success, "⊙": progress.exists, "✗": progress.failed}, refresh=False)
             pbar.update(1)
-            return {"idx": idx, "url": landing_url, "status": "success", "filename": filename}
+            return {"idx": idx, "url": landing_url, "status": "success", "filename": filename, "title": title}
         else:
             progress.increment("failed")
             pbar.set_postfix({"✓": progress.success, "⊙": progress.exists, "✗": progress.failed}, refresh=False)
             pbar.update(1)
-            return {"idx": idx, "url": landing_url, "status": "failed", "reason": "no valid pdf"}
+            return {"idx": idx, "url": landing_url, "status": "failed", "reason": "no valid pdf", "title": title}
     
     except Exception as e:
         progress.increment("failed")
@@ -224,7 +294,15 @@ def main():
         print("✗ Error: Could not find URL column")
         return
 
+    # Detect title column (optional)
+    title_column = next((col for col in ['Title', 'title', 'Article Title', 'article_title', 'Name', 'name'] 
+                         if col in df.columns), None)
+    
     print(f"Using URL column: '{url_column}'")
+    if title_column:
+        print(f"Using Title column: '{title_column}'")
+    else:
+        print("No title column found - will scrape titles from pages")
     print(f"Download folder: '{DOWNLOAD_FOLDER}'")
     print(f"Max downloads: {MAX_DOWNLOADS}")
     print(f"Parallel workers: {WORKERS}")
@@ -245,7 +323,7 @@ def main():
         
         with ThreadPoolExecutor(max_workers=WORKERS) as executor:
             futures = {
-                executor.submit(process_row, idx, row, url_column, DOWNLOAD_FOLDER, progress, pbar): idx
+                executor.submit(process_row, idx, row, url_column, title_column, DOWNLOAD_FOLDER, progress, pbar): idx
                 for idx, row in df_to_process.iterrows()
             }
 
